@@ -18,7 +18,7 @@ list_of_files = [
     "api/routes.py",
     "api/models.py",
     "ui/gradio_app.py",
-    "news_articles/__init__.py",
+    "news-articles",
     "research/trials.ipynb",
     ".env",
     "requirements.txt",

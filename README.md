@@ -52,6 +52,8 @@ news-summarizer-tts/
 │── research/
 │   ├── trials.ipynb           # Experiments and research notebook
 │
+│── news-articles/             # scraped news saved in json file
+│
 │── .env                       # Environment variables (API keys, configurations)
 │── requirements.txt            # List of dependencies
 │── setup.py                    # Setup script (if needed for packaging)
@@ -59,4 +61,5 @@ news-summarizer-tts/
 │── README.md                   # Documentation for the project
 │── huggingface.yml              # Hugging Face Spaces configuration file
 │── runtime.txt                  # Python version for Hugging Face Spaces deployment
+
 ```
