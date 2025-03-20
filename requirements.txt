@@ -10,8 +10,8 @@ pandas
 numpy
 tqdm
 python-dotenv
-TTS 
-soundfile 
-deep-translator
 torch
+soundfile
+deep-translator
+gTTS
 -e .

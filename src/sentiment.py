@@ -53,7 +53,7 @@ class SentimentAnalyzer:
             "sentiment": sentiment
         }
 
-def text_sentiment(text:str, sentence_length:int=200):
+def text_sentiment(text:str, sentence_length:int=300):
     analyzer = SentimentAnalyzer()
     # keep the length of text less
     text = text[:sentence_length]

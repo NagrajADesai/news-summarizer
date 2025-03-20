@@ -1,28 +1,48 @@
-from transformers import pipeline, AutoModelForSeq2SeqLM, AutoTokenizer
-from TTS.api import TTS
+import os
 import soundfile as sf
+from TTS.api import TTS
 from deep_translator import GoogleTranslator
+from gtts import gTTS 
 
-class HindiTTS:
-    def __init__(self, model_name="coqui_ai/vits_hi"):
-        """
-        Initialize the Text-to-Speech model for Hindi.
-        """
-        self.tts = TTS(model_name)
 
-    def text_to_speech(self, text, output_file="output.wav"):
-        """
-        Convert Hindi text to speech and save as a WAV file.
-        """
-        audio_data = self.tts.tts(text)
-        sf.write(output_file, audio_data, 22050)  # Save the audio file
-        print(f"Speech saved as {output_file}")
+def text_to_speech_gtts(text, output_file="output.mp3"):
+    tts = gTTS(text=text, lang="hi")
+    tts.save(output_file)
+    print(f"Speech saved as {output_file}")
+
 
 class Translator:
     def translate_to_hindi(self, text):
         """
         Translate English text to Hindi.
         """
-        translated_text = GoogleTranslator(source='en', target='hi').translate(text)
-        return translated_text
+        return GoogleTranslator(source='en', target='hi').translate(text)
 
+# Function to translate English text to Hindi and convert it to speech
+def translate_and_speak(english_text, output_dir="audio_files"):
+    """
+    Translate an English sentence to Hindi and convert it to speech.
+    The audio file is saved in the specified directory.
+    """
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Initialize translator and TTS
+    translator = Translator()
+    
+    # Translate text
+    hindi_text = translator.translate_to_hindi(english_text)
+    print(f"Translated Text: {hindi_text}")
+    
+    # Generate speech file path
+    output_file = os.path.join(output_dir, "hindi_speech.mp3")
+    
+    # Convert text to speech
+    text_to_speech_gtts(hindi_text, output_file)
+    
+    return output_file
+
+# Example usage
+if __name__ == "__main__":
+    translate_and_speak()
+   
