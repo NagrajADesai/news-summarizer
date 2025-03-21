@@ -2,7 +2,7 @@ from src.news_scraper import main
 from src.sentiment import text_sentiment
 from src.summarizer import text_summary
 from api.models import analyze_news_sentiment
-from src.tts_generator import translate_and_speak
+from api.gradio_app import create_gradio_app
 import re
 import os
 import json
@@ -88,11 +88,14 @@ if __name__ == "__main__":
     # generation summary for entire article
     # Corrected file path format
 
-    file_path = r"news-articles/ford_final_result.json"  # Use forward slashes
+    ## audio file generator
+    # file_path = r"news-articles/ford_final_result.json"  # Use forward slashes
 
-    # Read the JSON file
-    with open(file_path, "r", encoding="utf-8") as file:
-        all_articles = json.load(file)
+    # # Read the JSON file
+    # with open(file_path, "r", encoding="utf-8") as file:
+    #     all_articles = json.load(file)
 
-    english_sentence = all_articles['Coverage differences']
-    translate_and_speak(english_sentence)
+    # english_sentence = all_articles['Coverage differences']
+    # translate_and_speak(english_sentence)
+
+    create_gradio_app().launch()
