@@ -7,8 +7,8 @@ class NewsScraper:
     def __init__(self, company: str):
         self.company = company
         self.headers = {"User-Agent": "Mozilla/5.0"}
-        self.output_dir = "news-articles"
-        os.makedirs(self.output_dir, exist_ok=True)
+        # self.output_dir = "news-articles"
+        # os.makedirs(self.output_dir, exist_ok=True)
     
     def scrape_bbc_news(self):
         search_url = f"https://www.bbc.co.uk/search?q={self.company}"
@@ -66,27 +66,27 @@ class NewsScraper:
         
         return results
     
-    def save_articles(self):
-        bbc_articles = self.scrape_bbc_news()
-        ap_articles = self.scrape_ap_news()
+    # def save_articles(self):
+    #     bbc_articles = self.scrape_bbc_news()
+    #     ap_articles = self.scrape_ap_news()
         
-        articles = {"BBC": bbc_articles, "AP": ap_articles}
+    #     articles = {"BBC": bbc_articles, "AP": ap_articles}
         
-        file_path = os.path.join(self.output_dir, f"{self.company}_articles.json")
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(articles, f, indent=4, ensure_ascii=False)
+    #     file_path = os.path.join(self.output_dir, f"{self.company}_articles.json")
+    #     with open(file_path, "w", encoding="utf-8") as f:
+    #         json.dump(articles, f, indent=4, ensure_ascii=False)
         
-        print(f"Articles saved to {file_path}")
-        return file_path
+    #     print(f"Articles saved to {file_path}")
+    #     return file_path
 
 def main(company: str):
     scraper = NewsScraper(company)
-    file_path = scraper.save_articles()
+    # file_path = scraper.save_articles()
     
-    with open(file_path, "r", encoding="utf-8") as f:
-        articles_json = json.load(f)
+    # with open(file_path, "r", encoding="utf-8") as f:
+    #     articles_json = json.load(f)
     
-    return articles_json
+    return scraper
 
 # Example usage:
 # result = main("Tesla")

@@ -1,6 +1,5 @@
 import os
 import soundfile as sf
-from TTS.api import TTS
 from deep_translator import GoogleTranslator
 from gtts import gTTS 
 
@@ -19,12 +18,13 @@ class Translator:
         return GoogleTranslator(source='en', target='hi').translate(text)
 
 # Function to translate English text to Hindi and convert it to speech
-def translate_and_speak(english_text, output_dir="audio_files"):
+def translate_and_speak(english_text, company_name):
     """
     Translate an English sentence to Hindi and convert it to speech.
     The audio file is saved in the specified directory.
     """
     # Ensure output directory exists
+    output_dir = 'audio_files'
     os.makedirs(output_dir, exist_ok=True)
     
     # Initialize translator and TTS
@@ -35,7 +35,7 @@ def translate_and_speak(english_text, output_dir="audio_files"):
     print(f"Translated Text: {hindi_text}")
     
     # Generate speech file path
-    output_file = os.path.join(output_dir, "hindi_speech.mp3")
+    output_file = os.path.join(output_dir, f"{company_name.lower()}.mp3")
     
     # Convert text to speech
     text_to_speech_gtts(hindi_text, output_file)
