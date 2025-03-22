@@ -81,12 +81,15 @@ class NewsScraper:
 
 def main(company: str):
     scraper = NewsScraper(company)
+    bbc_articles = scraper.scrape_bbc_news()
+    ap_articles = scraper.scrape_ap_news()
+    articles = {"BBC": bbc_articles, "AP": ap_articles}
     # file_path = scraper.save_articles()
     
     # with open(file_path, "r", encoding="utf-8") as f:
     #     articles_json = json.load(f)
     
-    return scraper
+    return articles
 
 # Example usage:
 # result = main("Tesla")

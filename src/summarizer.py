@@ -25,9 +25,9 @@ class SentenceSummarizer(SentimentAnalyzer):
         summary = self.summarization_pipeline(cleaned_text, min_length=min_length, max_length=max_length)[0]
         return summary["summary_text"]
 
-def text_summary(text: str, min_length: int = 200, max_length: int = 300,sentence_length:int=500):
+def text_summary(text: str, min_length: int = 50, max_length: int = 150, sentence_length:int=300):
     summarizer = SentenceSummarizer()
-    # text = text[:sentence_length]
+    text = text[:sentence_length]
     summary = summarizer.summarize_text(text, min_length, max_length)
     return summary
 
