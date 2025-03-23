@@ -65,34 +65,13 @@ class NewsScraper:
             results.append({"title": title, "content": text, "source":"ap_news"})
         
         return results
-    
-    # def save_articles(self):
-    #     bbc_articles = self.scrape_bbc_news()
-    #     ap_articles = self.scrape_ap_news()
-        
-    #     articles = {"BBC": bbc_articles, "AP": ap_articles}
-        
-    #     file_path = os.path.join(self.output_dir, f"{self.company}_articles.json")
-    #     with open(file_path, "w", encoding="utf-8") as f:
-    #         json.dump(articles, f, indent=4, ensure_ascii=False)
-        
-    #     print(f"Articles saved to {file_path}")
-    #     return file_path
 
 def main(company: str):
     scraper = NewsScraper(company)
     bbc_articles = scraper.scrape_bbc_news()
     ap_articles = scraper.scrape_ap_news()
     articles = {"BBC": bbc_articles, "AP": ap_articles}
-    # file_path = scraper.save_articles()
-    
-    # with open(file_path, "r", encoding="utf-8") as f:
-    #     articles_json = json.load(f)
-    
     return articles
 
-# Example usage:
-# result = main("Tesla")
-# print(json.dumps(result, indent=4, ensure_ascii=False))
 if __name__ == "__main__":
     main()

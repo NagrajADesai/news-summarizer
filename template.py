@@ -8,25 +8,18 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
 list_of_files = [
     "src/__init__.py",
-    "src/helper.py",
     "src/news_scraper.py",
     "src/summarizer.py",
     "src/sentiment.py",
     "src/tts_generator.py",
-    "src/config.py",
-    "api/__init__.py",
-    "api/routes.py",
-    "api/models.py",
-    "ui/gradio_app.py",
-    "news-articles",
     "research/trials.ipynb",
     ".env",
     "requirements.txt",
     "setup.py",
     "app.py",
     "README.md",
-    "huggingface.yml",
-    "runtime.txt"
+    "utils.py"
+    "Dockerfile"
 ]
 
 

@@ -1,0 +1,51 @@
+{
+    "Company": "Apple",
+    "Articles": [
+        {
+            "title": "Exhibition of apples grown from discarded cores",
+            "summary": "An orchard of trees that started life as discarded apple cores in hedgerows and waysides, is the subject of a new exhibition in Cornwall.\nThe Some Interesting Apples project has found more than 600 apple wildings in the county since 2019, according to The University of Exeter which supported the scheme.\nThe university said working with the National T",
+            "sentiment": "positive"
+        },
+        {
+            "title": "Apple encrypted data row hearing begins in secret",
+            "summary": "Apple's encrypted data case against the UK government has begun in secret at the Royal Courts of Justice.\nThe Home Office has demanded the right to access data from Apple users that have turned on Advanced Data Protection (ADP), a tool that prevents anyone other than the user - including the tech giant - from reading their files.\nApple says it is i",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Pressure grows to hold secret Apple data privacy hearing in public",
+            "summary": "US politicians, civil rights campaigners and the BBC are all calling for a High Court hearing about a data privacy row between Apple and the UK government to be held in public.\nThe tech giant is taking legal action after the Home Office demanded the right to access customer data protected by its Advanced Data Protection (ADP) progr",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Secret hearing on Friday in Apple and UK government data row",
+            "summary": "Apple's appeal against a UK government demand to be able to access its customers' most highly encrypted data is set to be considered at a secret hearing at the High Court on Friday, the BBC understands.\nIt is due to be considered by the Investigatory Powers Tribunal - an independent court which has the power to investigate claims against",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Grandmother gets X-rated message after Apple AI fail",
+            "summary": "A woman from Dunfermline has spoken of her shock after an Apple voice-to-text service mistakenly inserted a reference to sex - and an apparent insult - into a message left by a garage.\nLouise Littlejohn, 66, received a voicemail message on Wednesday from a Lookers Land Rover garage in Motherwell inviting her to an event.\nAn artificial intelligen",
+            "sentiment": "negative"
+        },
+        {
+            "title": "A key to protecting apples from climate change might be hiding in Michigan’s forests",
+            "summary": "In the quest to make apple trees more resilient in a warming climate, some Michigan researchers are looking for a late bloomer.\nA native Michigan apple tree, the Malus coronaria, learned to fight frost by blooming two or three weeks later than the trees that produce cultivated varieties of apples like Honeycrisp o",
+            "sentiment": "positive"
+        },
+        {
+            "title": "Apple announces $500 billion investment in US amid tariff threats that could affect the iPhone",
+            "summary": "NEW YORK (AP) — Apple announced Monday that it plans to invest more than $500 billion in the United States over the next four years, including plans to hire 20,000 people and build a new server factory in Texas.\nThe move comes just days after President Donald Trump said Apple CEO Tim Cook promised him th",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Apple shareholders reject proposal to scrap company’s diversity programs",
+            "summary": "Apple shareholders rebuffed an attempt to pressure the technology trendsetter into joining President Donald Trump’s push to scrub corporate programs designed to diversify its workforce.\nThe proposal drafted by the National Center for Public Policy Research — a self-described conservative think tank — urged Apple to follow a l",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Apple will fix iPhone glitch that suggests replacing the word ‘racist’ with ‘Trump’",
+            "summary": "LONDON (AP) — Apple is fixing a bug within the dictation feature on some iPhones that briefly suggests the word “Trump” when a word with an R consonant is spoken, including “racist.”\nThe company is responding to the controversy after some iPhone owners posted videos on social media this week to detail how the glitc",
+            "sentiment": "negative"
+        }
+    ],
+    "Coverage differences": "Apple's encrypted data case against the uk government has begun in secret at the royal courts of justice. The home office has demanded the right to access data from apple users that have turned on advanced data protection adp. The tool prevents anyone other than the user including the tech giant from reading their files. apple says it is i negative pressure grows to hold secret apple data privacy hearing in public. politicians, civil rights campaigners and the bbc are all calling for a high court hearing about a data privacy row between apple and the uK government to be held inpublic."
+}

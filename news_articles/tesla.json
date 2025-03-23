@@ -1,0 +1,56 @@
+{
+    "Company": "tesla",
+    "Articles": [
+        {
+            "title": "Tesla vandals face up to 20 years in prison, says attorney general",
+            "summary": "Three defendants accused of vandalism targeting elon musk's tesla electric vehicle company could face up to 20 years in prison, says attorney general pam bondi. bondi said the damage to tesLA cars, dealerships and teslas was extensive.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Tesla makes largest ever Cybertruck recall",
+            "summary": "Tesla cybertrucks have been recalled due to concerns about part of the electric car's trim falling off in the model's eighth and largest ever recall. The issue affects more than 46,000 trucks made starting in november 2023.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Tesla's challenges run deeper than 'toxic' controversy around Elon Musk",
+            "summary": "\"This has been our family car for three years, and it has been an absolute dream,\" says ben kilbey. ben is a staunch electric c. tesla's challenges run deeper than 'toxic' controversy around elon musk listen to theo read this article on bbc sounds.",
+            "sentiment": "positive"
+        },
+        {
+            "title": "Vehicles damaged at Belfast Tesla dealership",
+            "summary": "About 20 vehicles have been damaged at a tesla dealership on the boucher road in belfast. Police received a report of damage to vehicles on a commercial premises on sunday and believe the incident had occurred in the past 24 hours.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Musk's Tesla raises concern over Trump tariffs",
+            "summary": " elon musk's electric carmaker tesla has warned it and other us exporters could be harmed by countries retaliating to donald trump's trade tariffs. mr musk is a close ally of the us president and is leading efforts to reduce the size of the federal gover.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Trump says anti-Tesla protesters will face 'hell'",
+            "summary": "Donald trump says antitesla protesters will face 'hell' people protesting against tesla should be labelled domestic terrorists, president donald trump said on t Tuesday at a white house media event designed to bolster elon musk's electric car company. trump sat in the driver's seat of a brand new red tesLA.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Musk's Tesla facilities in US face 'Takedown' protests",
+            "summary": " elon musk, who owns the car manufacturer, has played in the trump administration. most \"tesla takedown\" protests have been peaceful, but a few hav hav been violent. musk's tesla facilities in us face \"takedown\" protests.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "Musk’s cost-cutting team is laying off workers at the auto safety agency overseeing his car company",
+            "summary": " ap elon musks costcutting team is eliminating jobs at the vehicle safety agency that oversees tesla. The agency has launched investigations into deadly crashes involving his car company. The company is also laying off workers at the auto safety agency overseeing his company.",
+            "sentiment": "positive"
+        },
+        {
+            "title": "Legal experts say Trump official broke law by saying ‘Buy Tesla’ stock but don’t expect a crackdown",
+            "summary": "Top government lawyers sprang into action, telling her she had violated ethics. legal experts say trump official broke law by saying buy tesla stock but dont expect a crackdown new york ap when a white house adviser in the first trump administration told tv viewers to go buy ivanka stuff.",
+            "sentiment": "negative"
+        },
+        {
+            "title": "In latest blow to Tesla, regulators recall nearly all Cybertrucks",
+            "summary": "U.S. safety regulators on th Thursday recalled virtually all cybertrucks on the road. It is the eighth recall of the teslamade vehicles since deliveries to customers began just over a year ago. In latest blow to tesla, regulators recall nearly all cyberrucks u.s.",
+            "sentiment": "negative"
+        }
+    ],
+    "Coverage differences": "Tesla cybertrucks have been recalled due to concerns about part of the electric car's trim falling off. The issue affects more than 46,000 trucks made starting in november 2023. Three defendants accused of vandalism targeting elon musk's tesla electric vehicle company could face up to 20 years in prison, says attorney general pam bondi. \"This has been our family car for three years, and it has been an absolute dream,\" says ben kilbey."
+}

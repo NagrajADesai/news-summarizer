@@ -1,17 +1,14 @@
 beautifulsoup4
 requests
 transformers
-nltk
 fastapi
 uvicorn
 gradio
 huggingface_hub
 pandas
 numpy
-tqdm
 python-dotenv
 torch
 soundfile
 deep-translator
 gTTS
--e .

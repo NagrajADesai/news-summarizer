@@ -36,7 +36,9 @@ def create_json(company_name):
 
                 # Generate summarization
                 print(f'Generating summary {count}')
-                text_sum = text_summary(complete_text, min_length= 50, max_length = 150, sentence_length=300)
+                # text_sum = text_summary(complete_text, min_length= 50, max_length = 150, sentence_length=300)
+                # to make the process fast i kept simple approach selecting only first length
+                text_sum = complete_text[len(title) + 1 : min(400, len(complete_text))]
 
                 articles.append({
                     'title': title,
@@ -112,7 +114,7 @@ class CompanyRequest(BaseModel):
 def fetch_company_info(request: CompanyRequest):
     return fetch_and_return_company_info(request.company_name)
 
-
+# gradio UI
 def create_gradio_app():
     title = "Company News Summary & Hindi Audio"
     description = "Enter a company name to fetch its news summary and an associated audio file."
@@ -131,6 +133,7 @@ def create_gradio_app():
 
 
 if __name__ == "__main__":
+    # run the application
     demo = create_gradio_app()
     app = gr.mount_gradio_app(app, demo, path="/")
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=7860)
